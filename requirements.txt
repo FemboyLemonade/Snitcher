@@ -1,0 +1,3 @@
+sty
+curl_cffi
+argparse
