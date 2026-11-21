@@ -82,16 +82,6 @@ Everything lives in the [`config/`](config/) directory:
 - **`report_words.txt`** — the blacklist used when scanning messages, one word per line. Any message from the target containing one of these words (case-insensitive, as a whole word) gets reported. Add or remove words freely.
 - **`banner.txt`** — the ASCII banner printed on startup. Change it if you want a different look.
 
-## Logging
-
-All output is written both to the console and to a timestamped log file created at startup:
-
-```
-logs/<unix-timestamp>-snitcher-logs.txt
-```
-
-Use `-v` if you want more detail about what is happening behind the scenes.
-
 ## How It Works
 
 1. Snitcher loads the word blacklist from `config/report_words.txt`.
